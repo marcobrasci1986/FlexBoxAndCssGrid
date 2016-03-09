@@ -1,0 +1,35 @@
+Resources:
+---------------------
+https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
+https://philipwalton.github.io/solved-by-flexbox/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+Flexbox is all about the relationship between:
+the parent container
+the flex container
+direct child elements (flex-items)
+---------------------------------------------------------
+
+flex-container
+flex-item
+
+main axis: left to right
+
+main-start: beginning flex-container
+main-end: end flex-container
+main-size: length from main-start to main-end
+
+cross-axis: loodlijn op main axis
+cross-start: start of cross-axis
+cross-end: end of cross-axis
+cross-size: from cross-start to cross-end
+---------------------------------------------------
+
+flex-container:
+------------------
+display: inline-flex ->Only take as mush space as the flex-items need
+
+flex-direction: change main axis
+flex-wrap: control how items are wrapped or not wrapped (similar to text-wrap)
+flex-grow:1 -> flex-items will grow to fill the space equally
