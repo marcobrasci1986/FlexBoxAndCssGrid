@@ -10,7 +10,7 @@ body {
 }
 
 .flex-container {
-  display: inline-flex;
+  display: block;
   border:solid 4px #000;
 }
 
@@ -36,4 +36,32 @@ body {
 .flex-item strong {
   display: block;
   font-size: 130%;
+}
+
+.container{
+  background-color: $color-purple;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered-top{
+  align-self: flex-start;
+}
+
+.centered-bottom{
+  align-self: flex-end;
+}
+
+
+.item{
+  padding:10px;
+  background: $color-green;
+  border-radius: 3px;
+  color:white;
+
+  max-width: 50%;
+  flex-grow: 1;
 }
