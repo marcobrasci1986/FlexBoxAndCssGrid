@@ -1,11 +1,11 @@
+.cards {
+    border: 3px solid red;
+}
+
 .columns {
     display: flex;
     gap: 15px;
-}
 
-
-.columns > * {
-    flex-basis: 33%;
 }
 
 /* .columns {
