@@ -1,32 +1,38 @@
 .cards {
-    border: 3px solid red;
+
 }
 
 .columns {
+    border: 3px solid red;
+
     display: flex;
-    gap: 15px;
-
+    flex-direction: column; /* Flex items are stacked in columns*/
+    gap: 2rem;
 }
 
-/* .columns {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 1em;
-} */
+/**
+- flex-basis: is like width
+- flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; -> Same as flex: 1
+ */
+.columns > * {
+    /*flex: 1;*/
 
-/* .columns {
-  display: flex;
-  gap: 1em;
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;*/
+    /*flex-basis: 0;*/
+
+    flex-basis: 100%;
 }
-
-.columns > *:first-child {
-  width: 250px;
-  flex-shrink: 0;
+/**
+min-width: 750px -> vanaf 750px
+ */
+@media (min-width: 750px) {
+    .columns {
+        flex-direction: row; /* Flex items are laid out in a row*/
+    }
 }
-
-.columns > *:last-child {
-  flex-grow: 1;
-} */
 
 /* general styling */
 
