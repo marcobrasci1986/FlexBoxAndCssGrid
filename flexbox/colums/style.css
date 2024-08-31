@@ -1,13 +1,29 @@
-.cards {
+/*
+Overflow debugging
 
+outline does not affect the size
+
+* * * * *
+*/
+
+* * {
+    /*outline: 3px solid purple;*/
+
+    /*background-color: hsl(50 50% 50% / .4);*/
+}
+
+p.nowrap {
+    text-wrap: nowrap;
 }
 
 .columns {
-    border: 3px solid red;
+    border: 3px solid firebrick;
 
     display: flex;
     flex-direction: column; /* Flex items are stacked in columns*/
     gap: 2rem;
+
+    align-items: center; /* default is stretch*/
 }
 
 /**
@@ -25,6 +41,12 @@
 
     flex-basis: 100%;
 }
+
+.card:nth-child(2) {
+    background-color: pink;
+    align-self: end; /* overwrites the align-content of the parent*/
+}
+
 /**
 min-width: 750px -> vanaf 750px
  */
